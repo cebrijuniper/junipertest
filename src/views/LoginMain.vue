@@ -2,7 +2,7 @@
 <LogIn />
 </template>
 
-<script>
+<script lang="ts">
 import LogIn from "../components/LogIn.vue"
 
 
