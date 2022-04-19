@@ -1,8 +1,8 @@
 <template>
-  <aside class="w-24 float-left h-full border" aria-label="Sidebar">
+  <aside class="w-24 float-left h-full border border-t-0" aria-label="Sidebar">
     <div class="overflow-y-auto py-4 bg-[#f2f2f2] rounded dark:bg-gray-800 h-full" style="padding-left: 5px; padding-right: 5px">
       <ul class="space-y-2">
-        <li class="flex justify-center" v-for="link in sidebarLinks">
+        <li class="flex justify-center" v-for="(link, indx) in sidebarLinks" :key="indx">
           <router-link :to="link.to" class="pt-2 rounded-lg">
             <div class="pb-2 flex justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#b3b3b3] focus:text-[#5a7b32]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

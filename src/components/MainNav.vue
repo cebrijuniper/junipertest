@@ -9,7 +9,8 @@
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
-              <a href="#" class="pt-0 pb-0 h-16 leading-[60px] hover:border-b-[4px] hover:border-[#88a750] text-white px-3 py-2  text-md font-medium " aria-current="page">Sales</a>
+              
+               <router-link to="/" class="pt-0 pb-0 h-16 leading-[60px] hover:border-b-[4px] hover:border-[#88a750] text-white px-3 py-2  text-md font-medium ">Sales</router-link>
             </div>
           </div>
         </div>

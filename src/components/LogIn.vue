@@ -40,12 +40,8 @@
 </div>
 </template>
 
-<script>
-export default ({
-   setup (){
-       return {}
-    }
-})
+<script lang="ts">
+export default {}
 </script>
 
 
