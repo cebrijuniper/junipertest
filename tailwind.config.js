@@ -5,6 +5,12 @@ module.exports = {
   ],
   theme: {
     extend: {},
+<<<<<<< HEAD
+=======
+    fontFamily: {
+      'century': ['Century Gothic']
+    }
+>>>>>>> kayla-branch
   },
   plugins: [],
 }
