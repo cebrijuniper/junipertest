@@ -1,6 +1,6 @@
 <template>
-  <aside class="w-24 float-left h-full" aria-label="Sidebar">
-    <div class="overflow-y-auto py-4 bg-[#f2f2f2] rounded dark:bg-gray-800" style="padding-left: 5px; padding-right: 5px">
+  <aside class="w-24 float-left h-full border" aria-label="Sidebar">
+    <div class="overflow-y-auto py-4 bg-[#f2f2f2] rounded dark:bg-gray-800 h-full" style="padding-left: 5px; padding-right: 5px">
       <ul class="space-y-2">
         <li class="flex justify-center" v-for="link in sidebarLinks">
           <router-link :to="link.to" class="pt-2 rounded-lg">

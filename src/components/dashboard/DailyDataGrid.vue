@@ -1,6 +1,6 @@
 <template>
-    <div class="grid grid-cols-4 gap-3 grid-main">
-        <div class="grid gridItem" v-for="(grid, i) in gridData" :key="i">
+    <div class="grid grid-cols-4 gap-3 grid-main sm:w-1/6">
+        <div class="bg-white text-center text-xl" v-for="(grid, i) in gridData" :key="i">
         {{grid}}
         </div>
     </div>

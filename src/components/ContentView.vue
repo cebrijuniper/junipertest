@@ -1,5 +1,5 @@
 <template>
-    <div class="float-left py-4">
+    <div class="float-left pb-4 w-full">
         <div>
             <router-view></router-view>
         </div>
