@@ -5,6 +5,9 @@ import CustomersMain from '@/views/CustomersMain.vue'
 import ProductsMain from '@/views/ProductsMain.vue'
 import OrdersMain from '@/views/OrdersMain.vue'
 import LoginMain from '@/views/LoginMain.vue'
+import Analytics from "@/views/Analytics.vue";
+import Notifications from "@/views/Notifications.vue";
+import Activities from "@/views/Activities.vue";
 
 
 const router = createRouter({
@@ -23,7 +26,10 @@ const router = createRouter({
         { path: '',name: 'Dashboard',component: DashboardMain},
         { path: '/customers',name: 'CustomersMain',component: CustomersMain},
         { path: '/products',name: 'ProductsMain',component: ProductsMain},
-        { path: '/orders',name: 'OrdersMain',component: OrdersMain}
+        { path: '/orders',name: 'OrdersMain',component: OrdersMain},
+        { path: '/analytics',name: 'Analytics',component: Analytics},
+        { path: '/notifications',name: 'Notifications',component: Notifications},
+        { path: '/activities',name: 'Activities',component: Activities},
       ]
     },
   ]
