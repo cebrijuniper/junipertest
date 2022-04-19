@@ -4,6 +4,7 @@ import DashboardMain from '@/views/DashboardMain.vue'
 import CustomersMain from '@/views/CustomersMain.vue'
 import ProductsMain from '@/views/ProductsMain.vue'
 import OrdersMain from '@/views/OrdersMain.vue'
+import LoginMain from '@/views/LoginMain.vue'
 import Analytics from "@/views/Analytics.vue";
 import Notifications from "@/views/Notifications.vue";
 import Activities from "@/views/Activities.vue";
@@ -12,6 +13,11 @@ import Activities from "@/views/Activities.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    {
+      path: '/login',
+      name: 'LoginMain',
+      component: LoginMain
+    },
     {
       path: '/',
       name: 'home',
@@ -25,7 +31,7 @@ const router = createRouter({
         { path: '/notifications',name: 'Notifications',component: Notifications},
         { path: '/activities',name: 'Activities',component: Activities},
       ]
-    }
+    },
   ]
 })
 
