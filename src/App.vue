@@ -6,11 +6,14 @@ import SideBar from './components/SideBar.vue'
 
 <template>
   <div>
-    <LogIn />
-    <MainNav />
-    <SideBar/>
-    <RouterView />
-    <div class="clear-both"></div>
+    <div class="h-screen w-screen flex flex-col">
+      <MainNav/>
+      <div class="h-full w-full flex flex-row">
+        <SideBar/>
+        <RouterView/>
+      </div>
+      <div class="clear-both"></div>
+    </div>
   </div>
 
 </template>
