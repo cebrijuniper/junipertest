@@ -9,14 +9,6 @@ module.exports = {
     extend: {},
     fontFamily: {
       'century': ['Century Gothic']
-    },
-    colors: {
-      'green': {
-        100: '#e1ebcf',
-        200: '#76a340',
-        300: '#5a7b31'
-
-      }
     }
   },
   plugins: [],
