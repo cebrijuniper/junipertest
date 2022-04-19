@@ -7,6 +7,7 @@ import SideBar from './components/SideBar.vue'
 
 <template>
   <div>
+    <LogIn />
     <MainNav />
     <SideBar />
     <RouterView />
