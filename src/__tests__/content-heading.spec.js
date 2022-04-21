@@ -2,16 +2,15 @@ import { mount } from '@vue/test-utils'
 
 import ContentHeading from '../components/ContentHeading.vue'
 
-describe('Form.test.js', () => {
-  let cmp;
+describe('ContentHeading.vue', () => {
+    let cmp;
 
-  beforeEach(() => {
-    cmp = mount(ContentHeading, {
-      propsData: {}
-    });
-  })//reset props before each test
+    beforeEach(() => {
+        cmp = mount(ContentHeading, {
+        propsData: {}
+        });
+    })//reset props before each test
 
-  describe('Content Heading', () => {
     it('returns empty string if prop not passed in', () => {
       expect(cmp.find(".content-label").text()).toBe("")
     })
@@ -24,5 +23,5 @@ describe('Form.test.js', () => {
       })
       expect(cmp.find(".content-label").text()).toBe("Dashboard")
     })
-  })
+  
 })
