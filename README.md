@@ -38,3 +38,8 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### Run the tailwinds build
+```sh
+npm run tailwinds:build
+```
