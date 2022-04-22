@@ -1,14 +1,14 @@
 <template>
   <div class="min-h-screen bg-gray-100 flex flex-col justify-center sm:py-12">
   <div class="p-10 xs:p-0 mx-auto md:w-full md:max-w-md">
-      <img src="../assets/juniper-logo.png" />
+      <img class="juniper-logo" src="../assets/juniper-logo.png" />
     <div class="bg-white shadow w-full rounded-lg divide-y divide-gray-200">
       <div class="px-5 py-7">
-        <label class="font-century-semibold text-sm text-gray-600 pb-1 block">E-mail</label>
-        <input type="text" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full" />
-        <label class="font-century-semibold text-sm text-gray-600 pb-1 block">Password</label>
-        <input type="text" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full" />
-        <button type="button" class="transition duration-200 bg-[#76a340] hover:bg-[#5a7b31] focus:bg-[#e1ebcf] focus:shadow-sm focus:ring-4 focus:ring-[#5a7b31] focus:ring-opacity-50 text-white w-full py-2.5 rounded-lg text-sm shadow-sm hover:shadow-md font-century-semibold text-center inline-block">             
+        <label class="font-century-semibold text-sm text-gray-600 pb-1 block title-email">E-mail</label>
+        <input type="text" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full input-email" />
+        <label class="font-century-semibold text-sm text-gray-600 pb-1 block title-password">Password</label>
+        <input type="text" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full input-password" />
+        <button type="button" class="transition duration-200 bg-[#76a340] hover:bg-[#5a7b31] focus:bg-[#e1ebcf] focus:shadow-sm focus:ring-4 focus:ring-[#5a7b31] focus:ring-opacity-50 text-white w-full py-2.5 rounded-lg text-sm shadow-sm hover:shadow-md font-century-semibold text-center inline-block btn-log-in">             
             <span class="font-century inline-block mr-2">Login</span>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 inline-block">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
