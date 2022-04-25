@@ -1,17 +1,19 @@
 <template>
-    <div class="float-left pb-4 w-full">
-        <div>
-            <router-view></router-view>
-        </div>
-    </div>
+  <div>
+    <RouterView/>
+  </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import {defineComponent} from 'vue'
+import {RouterView} from 'vue-router'
 
 export default defineComponent({
-    setup() {
-        
-    },
+  setup() {
+
+  },
+  components: {
+    RouterView,
+  }
 })
 </script>

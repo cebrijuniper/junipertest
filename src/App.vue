@@ -1,28 +1,42 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import MainNav from './components/MainNav.vue'
-import SideBar from './components/SideBar.vue'
-</script>
-
 <template>
-  <div>
-    <div class="h-screen w-screen flex flex-col">
-      <MainNav/>
-      <div class="h-full w-full flex flex-row">
-        <SideBar/>
-        <RouterView/>
-      </div>
-      <div class="clear-both"></div>
-    </div>
-  </div>
-
+  <LogIn v-show="route.path === '/login'"/>
+  <MainLayout v-show="route.path !== '/login'"/>
 </template>
 
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+<script lang="ts">
+import MainLayout from "@/components/layout/MainLayout.vue";
+import {useRouter, useRoute} from 'vue-router'
+import {ref} from "vue";
+import LogIn from "@/components/LogIn.vue";
 
-  body{
-    background: #f7f7f7;
-    font-family: 'Poppins', sans-serif;
+export default {
+  setup() {
+    const router = useRouter()
+    const route = useRoute()
+    var authenticated = ref(false);
+    const login = function () {
+      router.push('/login')
+    }
+    console.log(useRoute().path)
+
+    return {
+      authenticated,
+      login,
+      route
+    }
+  },
+  components: {
+    MainLayout,
+    LogIn
   }
+}
+</script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  background: #f7f7f7;
+  font-family: 'Poppins', sans-serif;
+}
 </style>
