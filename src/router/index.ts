@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import ContentView from '@/components/ContentView.vue'
 import DashboardMain from '@/views/DashboardMain.vue'
 import CustomersMain from '@/views/CustomersMain.vue'
 import ProductsMain from '@/views/ProductsMain.vue'
@@ -8,6 +7,7 @@ import LoginMain from '@/views/LoginMain.vue'
 import Analytics from "@/views/Analytics.vue";
 import Notifications from "@/views/Notifications.vue";
 import Activities from "@/views/Activities.vue";
+import MainLayout from '@/components/layout/MainLayout.vue'
 
 
 const router = createRouter({
@@ -21,7 +21,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: ContentView,
+      component: MainLayout,
       children: [
         { path: '',name: 'Dashboard',component: DashboardMain},
         { path: '/customers',name: 'CustomersMain',component: CustomersMain},
@@ -31,7 +31,8 @@ const router = createRouter({
         { path: '/notifications',name: 'Notifications',component: Notifications},
         { path: '/activities',name: 'Activities',component: Activities},
       ]
-    },
+    }
+
   ]
 })
 

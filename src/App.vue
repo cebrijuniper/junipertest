@@ -1,13 +1,10 @@
 <template>
-  <LogIn v-show="route.path === '/login'"/>
-  <MainLayout v-show="route.path !== '/login'"/>
+  <router-view></router-view>
 </template>
 
 <script lang="ts">
-import MainLayout from "@/components/layout/MainLayout.vue";
 import {useRouter, useRoute} from 'vue-router'
 import {ref} from "vue";
-import LogIn from "@/components/LogIn.vue";
 
 export default {
   setup() {
@@ -24,10 +21,6 @@ export default {
       login,
       route
     }
-  },
-  components: {
-    MainLayout,
-    LogIn
   }
 }
 </script>

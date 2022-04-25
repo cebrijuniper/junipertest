@@ -13,13 +13,17 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts">
+
 import ContentView from "@/components/ContentView.vue";
 import MainNav from "@/components/MainNav.vue";
 import SideBar from "@/components/SideBar.vue";
+import { defineComponent } from "vue";
+
+export default defineComponent({
+  components: {
+    ContentView, MainNav, SideBar
+  }
+})
 
 </script>
-
-<style scoped>
-
-</style>
