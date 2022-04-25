@@ -3,23 +3,15 @@
 </template>
 
 <script lang="ts">
-import {useRouter, useRoute} from 'vue-router'
 import {ref} from "vue";
 
 export default {
   setup() {
-    const router = useRouter()
-    const route = useRoute()
-    var authenticated = ref(false);
-    const login = function () {
-      router.push('/login')
-    }
-    console.log(useRoute().path)
+
+    const authenticated = ref(false);
 
     return {
       authenticated,
-      login,
-      route
     }
   }
 }
